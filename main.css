@@ -9,40 +9,48 @@ $linkColor:#66cc99;
 $boldColor:#4a4e51;
 $time:0.6s; */
 
+
+
+/* 
+243642
+387478
+629584
+E2F1E7
+*/
+
 @property --profileBg {
     syntax: "<color>";
     inherits: false;
-    initial-value: #fff;
+    initial-value: #E2F1E7;
 }
 @property --skillsBg {
     syntax: "<color>";
     inherits: false;
-    initial-value: #3d3e42;
+    initial-value: #243642;
 }
 @property --profileColor {
     syntax: "<color>";
     inherits: false;
-    initial-value: #9099a0;
+    initial-value: #387478;
 }
 @property --skillsColor {
     syntax: "<color>";
     inherits: false;
-    initial-value: #9099a0;
+    initial-value: #629584;
 }
 @property --linkColor {
     syntax: "<color>";
     inherits: false;
-    initial-value: #66cc99;
+    initial-value: #629584;
 }
 @property --boldColor {
     syntax: "<color>";
     inherits: false;
-    initial-value: #4a4e51;
+    initial-value: #243642;
 }
 @property --time {
-    syntax: "<color>";
     inherits: false;
-    initial-value: #3d3e42;
+    initial-value: 0.6s;
 }
   
 
@@ -209,6 +217,46 @@ a{color:var(--linkColor); text-decoration:none;}
   }
 
 }
+
+.horizontal_list {
+	/* margin: 0;
+	padding: 0; */
+  width:60%;
+  float:center;
+  position:relative;
+	list-style-type: none;
+  padding-bottom: 1;
+}
+	.horizontal_list li {
+		float: left;
+	}
+	.horizontal_list li:before {
+		content: none;
+	}
+	.horizontal_list li { 
+		padding-left: 10; 
+		text-indent: 0;
+	}
+			
+.header_menu {
+    width: 699px;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+}
+    .header_menu a{
+        text-decoration: none;
+        padding: 0 20px;
+        border-left: 1px solid #e4e3e8;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .header_menu a.no_border{
+        border-left: none;
+    }
+        .header_menu a:hover {
+            color: #837c9a;
+        }
 .experience {
   background:var(--skillsBg);
   width:60%;
