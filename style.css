@@ -111,9 +111,9 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 5%;
     font-size: 30px;
-    background: var(--bg);
+    background: var(--bg2);
     color: var(--txt);
     padding: 5px;
 }
