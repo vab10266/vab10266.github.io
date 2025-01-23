@@ -84,13 +84,26 @@ body{
 .container{
     padding: 10px 10%;
 }
+#nav_bar{
+    display: flex;
+    align-items: center;   
+    /* justify-content: space-between; */
+    background: var(--bg4);
+    border-radius: 15px;
+}
 nav{
+    margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     background: var(--bg4);
     border-radius: 15px;
+}
+.email{
+    float: left;
+    justify-self: left;
+    color: var(--highlight);
 }
 .logo{
     width: 140px;
@@ -265,4 +278,11 @@ nav ul li a:hover::after{
 }
 .work a{
     color: var(--highlight);
+}
+
+/* Projest subpages */
+.project_title{
+    padding: 10px 10%;
+    background: var(--bg4);
+    border-radius: 15px;
 }

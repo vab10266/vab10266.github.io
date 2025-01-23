@@ -6,23 +6,28 @@
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <title>Vaud Burton Portfolio</title>
   <link rel="stylesheet" href="style.css"> 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=link" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
 <body>
   <div id="header">
     <div class="container">
-      <nav>
+      <div id="nav_bar">
         <img src="images/new_logo.jpg" class="logo">
-        <ul>
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#about" onclick="opentab('Experience')">Experience</a></li>
-          <li><a href="#about" onclick="opentab('Education')">Education</a></li>
-          <li><a href="#about" onclick="opentab('Skills')">Skills</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-        </ul>
-      </nav>
+        <a href="mailto:vaudalexburton@gmail.com" class="email"><span class="material-symbols-outlined">
+          mail
+          </span></a>
+        <nav>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#about" onclick="opentab('Experience')">Experience</a></li>
+            <li><a href="#about" onclick="opentab('Education')">Education</a></li>
+            <li><a href="#about" onclick="opentab('Skills')">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="header-text">
         <p>Machine Learning Engineer</p>
         <h1>Howdy, I'm <span>Vaud</span> Burton</h1>
@@ -61,7 +66,8 @@
           <div class="tab-contents" id="Skills">
             <ul>
               <li><span>Machine Learning</span><br>Pytorch, TensorFlow, & sklearn</li>
-              <li><span>Data Analysis</span><br>pandas & numpy</li>
+              <li><span>ML Ops</span><br>Kubeflow</li>
+              <li><span>Data Analysis</span><br>pandas, numpy, & SQL</li>
               <li><span>Data Visualization</span><br>plotly & matplotlib</li>
             </ul>
           </div>
@@ -92,7 +98,7 @@
         </div></div>
         <div class="work"><img src="images/march_madness.png">
         <div class="layer">
-          <h3>March Madness</h3>
+          <h3><a href="march_madness.html">March Madness</a></h3>
           <p>Each year since 2022 for March Madness I have built on my March Madness AI bracket builder. I am currently working on using a Genetic Algorithm to optimize a multi-bracket submission as a whole. Last year, by best bracket scored in the <b>97th percentile</b> on ESPN with 1340 points! <br>Check it out on GitHub:
             <a href="https://github.com/vab10266/march_madness_24"><span class="material-symbols-outlined">
             link
@@ -100,6 +106,14 @@
           </p>
         </div>
       </div>
+      <div class="work"><img src="images/advent_of_code_24.png">
+      <div class="layer">
+        <h3>Advent Of Code</h3>
+        <p>
+          For the past 2 years, I have done Advent of Code, and this past year, I earned all 50 stars! I used it as a chance to hone my skills. This year I focused on algorithms in particular and brushed up on Dynamic programming. It was an interesting challenge, and I look forward to participating again next year.
+        </p>
+        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      </div></div>
         
       </div>
     </div>
