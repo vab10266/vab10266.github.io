@@ -87,7 +87,7 @@ body{
 #nav_bar{
     display: flex;
     align-items: center;   
-    /* justify-content: space-between; */
+    justify-content: space-between;
     background: var(--bg4);
     border-radius: 15px;
 }
@@ -100,11 +100,21 @@ nav{
     background: var(--bg4);
     border-radius: 15px;
 }
-.email{
+#footer {
+    margin-top: 10%;
+}
+#footer nav ul{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: right;
+    justify-content: space-around;
+}
+/* .email{
     float: left;
     justify-self: left;
     color: var(--highlight);
-}
+} */
 .logo{
     width: 140px;
     border-radius: 15px;
@@ -136,12 +146,14 @@ nav ul li a:hover::after{
     background: var(--highlight);
 }
 .header-text{
-    margin-top: 5%;
+    margin-top: 7%;
     font-size: 30px;
     background: var(--bg4);
     color: var(--txt);
     padding: 5px;
     border-radius: 15px;
+    display: inline-block;
+    padding: 2%;
 }
 .header-text h1{
     font-size: 60px;
@@ -205,15 +217,16 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .tab-contents ul li span{
     color: var(--highlight);
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
 }
 .tab-contents ul li span.dates{
     color: var(--highlight);
-    font-size: 14px;
+    font-size: 16px;
     float: right;
 }
 .tab-contents{
@@ -223,6 +236,18 @@ nav ul li a:hover::after{
     display: block;
 }
 
+.tab-contents ul.bullets{
+    margin-left: 5%;
+    font-size: 14px;
+}
+.tab-contents ul.bullets li{
+    list-style: circle;
+    margin: 10px 0;
+}
+.tab-contents ul.bullets li strong{
+    color: var(--highlight);
+    font-weight: normal;
+}
 /*-----portfolio------*/
 #portfolio{
     padding: 50px 0;
@@ -282,6 +307,12 @@ nav ul li a:hover::after{
 
 /* Projest subpages */
 .project_title{
+    margin: 5% 0;
+    padding: 10px 10%;
+    background: var(--bg4);
+    border-radius: 15px;
+}
+.project_text {
     padding: 10px 10%;
     background: var(--bg4);
     border-radius: 15px;

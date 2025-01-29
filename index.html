@@ -14,9 +14,6 @@
     <div class="container">
       <div id="nav_bar">
         <img src="images/new_logo.jpg" class="logo">
-        <a href="mailto:vaudalexburton@gmail.com" class="email"><span class="material-symbols-outlined">
-          mail
-          </span></a>
         <nav>
           <ul>
             <li><a href="#header">Home</a></li>
@@ -25,12 +22,14 @@
             <li><a href="#about" onclick="opentab('Education')">Education</a></li>
             <li><a href="#about" onclick="opentab('Skills')">Skills</a></li>
             <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#footer">Contact Me</a></li>
           </ul>
         </nav>
       </div>
       <div class="header-text">
         <p>Machine Learning Engineer</p>
-        <h1>Howdy, I'm <span>Vaud</span> Burton</h1>
+        <h1>Howdy,</h1>
+        <h1>I'm <span>Vaud</span> Burton</h1>
       </div>
     </div>
   </div>
@@ -53,8 +52,25 @@
           </div>
           <div class="tab-contents active-tab" id="Experience">
             <ul>
-              <li><span class="title">NCR Voyix</span><span class="dates">July 2022 - Present</span><br>Machine Learning Engineer</li>
-              <li><span>Manhattan Associates</span><span class="dates">May 2020 - Dec. 2021</span><br>Research and Development Intern</li>
+              <li>
+                <span class="title">NCR Voyix</span><span class="dates">July 2022 - Present</span><br>Machine Learning Engineer
+                <ul class="bullets">
+                  <li>Developed a <strong>Producton-Level Kubeflow Machine Learning</strong> pipeline to forecast Inventory and Labor needs at restaurants</li>
+                  <li>Performed <strong>Large-Scale</strong> feature engineering and optmizaton using <strong>XGBoost</strong>, <strong>PySpark</strong>, and <strong>KATIB</strong></li>
+                  <li>Conducted in-depth <strong>data analysis</strong>, and <strong>data visualizaton</strong> to optmize model performance using <strong>SQL</strong>, <strong>pandas</strong>, and <strong>plotly</strong>.</li>
+                  <li>Spearheaded initatve to improve <strong>algorithm</strong> performance, <strong>reduce cost by 60x and error by 33%</strong></li>
+                  <li>Planned out the <strong>pipeline architecture</strong> and roadmapped improvements to the process</li>
+                  <li><strong>Mentored</strong> multiple new-hires and interns after onboarding them onto the project.</li>
+                  <li>Presented reports requiring <strong>technical communicaton</strong> skills to 30 employees across 5 teams</li>
+                </ul>
+              </li>
+              <li>
+                <span>Manhattan Associates</span><span class="dates">May 2020 - Dec. 2021</span><br>Research and Development Intern
+                <ul class="bullets">
+                  <li>Implemented Multclass-Classificaton support to <strong>Producton-Level Cloud Based ML pipeline</strong> using <strong>sklearn</strong></li>
+                  <li>Generated nested SQL queries using <strong>Java</strong> and JSON Schemas to enforce internal standards</li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div class="tab-contents" id="Education">
@@ -66,9 +82,11 @@
           <div class="tab-contents" id="Skills">
             <ul>
               <li><span>Machine Learning</span><br>Pytorch, TensorFlow, & sklearn</li>
-              <li><span>ML Ops</span><br>Kubeflow</li>
-              <li><span>Data Analysis</span><br>pandas, numpy, & SQL</li>
-              <li><span>Data Visualization</span><br>plotly & matplotlib</li>
+              <li><span>Artificial Intelligence</span><br>Computer Vision, Natural Language Processing, & Game AI</li>
+              <li><span>ML Ops</span><br>Kubeflow, & BigQuery</li>
+              <li><span>Data Analysis</span><br>Pandas, NumPy, & SQL</li>
+              <li><span>Data Visualization</span><br>Plotly & Matplotlib</li>
+              <li><span>Coding</span><br>Python</li>
             </ul>
           </div>
         </div>
@@ -119,7 +137,25 @@
     </div>
   </div>
 
+  <div id="footer">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="mailto:vaudalexburton@gmail.com" class="email">Email</a></li>
+          <li><p>|</p></li>
+          <li><a href="https://github.com/vab10266">GitHub</a></li>
+          <li><p>|</p></li>
+          <li><a href="https://www.linkedin.com/in/vaudburton/">LinkedIn</a></li>
+          <li>|</li>
+          <li><a href="Vaud_Burton_11_22_24_Resume.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 <!-- https://www.youtube.com/watch?v=0YFrGy_mzjY&t=2597s -->
+ <!-- <span class="material-symbols-outlined">
+  mail
+</span> -->
   <script>
     var tablinks = document.getElementsByClassName("tab-links")
     var tabcontents = document.getElementsByClassName("tab-contents")
