@@ -105,6 +105,8 @@ nav{
 }
 #footer nav ul{
     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 10%;
     display: flex;
     align-items: right;
