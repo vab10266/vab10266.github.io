@@ -58,7 +58,7 @@
 @property --txt {
     syntax: "<color>";
     inherits: false;
-    initial-value: #F4D6B2;
+    initial-value: #fceecf;
 }
 
 *{
